@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Working with Express</title>
+	<meta charset="UTF-8">
+	<title>Socket IO Chat with Node!</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-<h1>Serving it up with Express</h1>
-<p>Plain Node</p>
-
-<footer>
-  <p>Footer</p>
-</footer>
-
+	<input type="text" class="nickname" placeholder="What is your nickname?">
+	<ul id="messages"></ul>
+	<form>
+		<input class="message" type="text" id="m" autocomplete="off">
+		<button>send</button>
+	</form>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
