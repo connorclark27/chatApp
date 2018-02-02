@@ -6,11 +6,15 @@
     chatMessage = chatForm.querySelector('.message');
 
     function appendMessage(msg) {
-      debugger;
+      //debugger;
+      let newMsg = `<li>${msg.message}</li>`;
+      messageList.innerHTML += newMsg;
     }
 
     function appendDiscMessage(msg) {
-      debugger;
+      //debugger;
+      let newMsg = `<li>${msg}</li>`;
+      messageList.innerHTML += newMsg;
     }
 
     function handleSendMessage(e) {
