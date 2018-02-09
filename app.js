@@ -20,6 +20,11 @@ io.on('connection', socket => { // function(socket) (...)
   console.log('a user has conected!')
   io.emit('chat message', { for : 'everyone', message : `${socket.id} is here`});
 
+  //handle messages sent from the client
+  socket.on('chat message', msg => {
+    io.emit('chat message', { for : 'everyone', message : msg});
+  })
+
   socket.on('disconnect', () => {
     console.log('a user has disconnected');
 
