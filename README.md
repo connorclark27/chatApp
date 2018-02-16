@@ -1,8 +1,12 @@
-# chatApp
+# Chat App
 
-If using on personal laptop, make sure to do an npm install
+Step 1: Make Sure Node JS is installed on computer
 
-To run the program, run node app in terminal
+Step 2: Navigate to the root folder in terminal. Enter "npm install"
 
-Go to chrome - localhost:3000
+Step 3: In the terminal enter "node app" to run the application
+
+Step 3: In Chrome navigate to localhost:3000
+
+# Sass Commands
 
